@@ -1,0 +1,84 @@
+/* Body Styling */
+body {
+    background: linear-gradient(to bottom, #ffde59, #ff914d, #fc5185, #b388eb);
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+#celebrateBtn {
+    background: linear-gradient(135deg, #ff6f61, #ff914d, #ffde59);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#celebrateBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+footer span {
+    color: #ffde59;
+    font-weight: 700;
+}
+
+/* Media Queries for Mobile & Tablet Devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;  /* Slightly smaller text on smaller screens */
+    }
+
+    #celebrateBtn {
+        font-size: 1.5rem;  /* Smaller button text on mobile */
+        padding: 0.8rem 2rem; /* Reduced button size */
+    }
+
+    footer {
+        font-size: 1.2rem;  /* Slightly smaller footer text */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;  /* Even smaller text for mobile screens */
+    }
+
+    #celebrateBtn {
+        font-size: 1.3rem;  /* Adjust button text size */
+        padding: 0.8rem 1.8rem; /* Smaller button size */
+    }
+
+    footer {
+        font-size: 1rem;  /* Smaller footer text on very small screens */
+    }
+}
